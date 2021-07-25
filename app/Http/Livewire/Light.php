@@ -26,11 +26,14 @@ class Light extends Component
 
 
 
+
     }
     public function decrement()
     {
 
-        if ($this->brightness >= 10) { //on peut incrementer
+       // $this->brightness = max(0, $this->brightness -10); //on ne doit pas depasser 0
+
+        if ($this->brightness >= 10) { //on peut derementer
             $this->brightness -= 10;
         }
     }
